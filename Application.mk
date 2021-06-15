@@ -7,7 +7,7 @@
 APP_PROJECT_PATH := ./
 
 # Target Gingerbread
-APP_PLATFORM := android-9
+APP_PLATFORM := android-19
 
 # Set our build script because it's not in ./jni
 APP_BUILD_SCRIPT := ./Android-NDK.mk
@@ -18,7 +18,8 @@ APP_OPTIM := debug
 #APP_OPTIM := release
 
 # We have no CPP Flags, but just in case. These are also used as CFlags.
-APP_CPPFLAGS := 
+# APP_CPPFLAGS := 
 
 # We starget the x86 ABI for now
-APP_ABI := armeabi
+APP_ABI := armeabi-v7a
+APP_ALLOW_MISSING_DEPS=true
